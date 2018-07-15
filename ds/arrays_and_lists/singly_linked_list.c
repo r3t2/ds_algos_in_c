@@ -105,13 +105,14 @@ static void run_test(int32_t* a, uint32_t len)
   }
   printf("]\n\n");
 
-  sll_handle_t h0;
+  
   sll_handle_t* h1 = calloc(1, sizeof(*h1));
   sll_handle_t* h2 = calloc(1, sizeof(*h2));
+  /*sll_handle_t h0;
   printf("sizeof sll_handle_t = %lx, h1 = %lx, h0 = %lx\n", sizeof(sll_handle_t), sizeof(h1), sizeof(h0));
   printf("sizeof node_t = %lx\n", sizeof(sll_node_t));
   printf("h1        = %p, h2        = %p\n", h1, h2);
-  printf("h1->size  = %p, h2->size  = %p\n\n", &h1->size, &h2->size);
+  printf("h1->size  = %p, h2->size  = %p\n\n", &h1->size, &h2->size);*/
 
   for(uint32_t i=0; i<len; i++)
   {
